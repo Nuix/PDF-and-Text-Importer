@@ -22,13 +22,15 @@ class ImportScanner
 		@directory = directory
 		@find_pdf = find_pdf
 		@find_text = find_text
+		@pdf_regex = /([0-9a-f\-]{32,})\.pdf$/i
+		@txt_regex = /([0-9a-f\-]{32,})\.txt$/i
 	end
 
 	def each_found_file(&block)
 		glob_expression = File.join(@directory,"**","*.*")
 		puts "Finding files: #{glob_expression}"
 		Dir.glob(glob_expression) do |file|
-			if file =~ /([0-9a-f\-]{32,})\.pdf$/i || file =~ /([0-9a-f\-]{32,}).txt$/i
+			if file =~ @pdf_regex || file =~ @txt_regex
 				# The test above should have stored the group matched in $1
 				guid_or_md5 = $1.gsub("-","")
 				if guid_or_md5.size == 32
