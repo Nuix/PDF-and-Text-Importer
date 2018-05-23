@@ -196,7 +196,6 @@ if dialog.getDialogResult == true
 					"Text Files: #{found_text_count}, " +
 					"Skipped Files: #{skipped_count}, " + 
 					"Items Updated: #{updated_item_guids.size}")
-		#$window.openTab("workbench",{:search=>"guid:(#{updated_item_guids.keys.join(" OR ")})"})
 		if tag_updated_items
 			$window.openTab("workbench",{:search=>"tag:\"#{tag_name}\""})
 		else
