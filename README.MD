@@ -1,9 +1,18 @@
 PDF and Text Importer
 =====================
 
-![Last tested in Nuix 7.4](https://img.shields.io/badge/Nuix-7.4-green.svg)
+![This script was last tested in Nuix 7.4](https://img.shields.io/badge/Script%20Tested%20in%20Nuix-7.4-green.svg)
+![This script's functionality is now built in to Nuix 7.8](https://img.shields.io/badge/Functionality%20Built%20in%20to%20Nuix-7.8-green.svg)
 
 View the GitHub project [here](https://github.com/Nuix/PDF-and-Text-Importer) or download the latest release [here](https://github.com/Nuix/PDF-and-Text-Importer/releases).
+
+# Notice
+
+With the release of Nuix 7.8, the functionality provided by this script is now available as a built in feature.
+
+![image](https://user-images.githubusercontent.com/11775738/52073681-ee6e9200-253c-11e9-896b-ad0dac18b99c.png)
+
+![image](https://user-images.githubusercontent.com/11775738/52073696-fdeddb00-253c-11e9-890f-2d21d3d723e3.png)
 
 # Overview
 
