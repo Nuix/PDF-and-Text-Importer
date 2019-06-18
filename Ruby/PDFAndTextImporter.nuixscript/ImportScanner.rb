@@ -38,7 +38,11 @@ class ImportScanner
 					if file =~ /\.pdf$/i
 						is_pdf = true
 					end
-					found_file = FoundFile.new(guid_or_md5,file,is_pdf)
+					
+					if (is_pdf && @find_pdf) || (!is_pdf && @find_text)
+						found_file = FoundFile.new(guid_or_md5,file,is_pdf)
+					end
+					
 					yield found_file
 				end
 			end
